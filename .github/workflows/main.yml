@@ -1,6 +1,6 @@
 name: Map backend package
 
-on: push
+on: [push]
 
 jobs:
   super-lint:
@@ -15,9 +15,6 @@ jobs:
         env:
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-
-# on: [push]
 
 # jobs:
 #   super-lint:
