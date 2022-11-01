@@ -6,19 +6,15 @@ jobs:
     name: Main test
     runs-on: ubuntu-latest
     steps:
-#       - name: Checkout code
-#       - uses: actions/checkout@v2
+      - name: Checkout code
+      - uses: actions/checkout@v2
+        # uses: actions/checkout@v2
 
 #       - name: Install dependencies
-#         uses: github/super-linter@v3
-      - name: Checkout code
-        uses: actions/checkout@v2
-
       # - name: Run Super-Linter
+#         uses: github/super-linter@v3
       #   uses: github/super-linter@v3
         env:
-          DEFAULT_BRANCH: main
+          DEFAULT_BRANCH: master
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-#         env:
-#           DEFAULT_BRANCH: master
 #           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
