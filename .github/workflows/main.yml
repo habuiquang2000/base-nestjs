@@ -10,8 +10,27 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Run Super-Linter
-        uses: github/super-linter@v3
+      # - name: Run Super-Linter
+      #   uses: github/super-linter@v3
         env:
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+# name: Map backend package
+
+# on: [push]
+
+# jobs:
+#   super-lint:
+#     name: Main test
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout code
+#       - uses: actions/checkout@v2
+
+#       - name: Install dependencies
+#         uses: github/super-linter@v3
+
+#         env:
+#           DEFAULT_BRANCH: master
+#           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
