@@ -1,4 +1,4 @@
-name: Super-Linter
+name: Map backend package
 
 on: push
 
@@ -16,7 +16,6 @@ jobs:
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-# name: Map backend package
 
 # on: [push]
 
